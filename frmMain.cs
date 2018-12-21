@@ -409,7 +409,7 @@ namespace EnMon
                     if (variable == varActValue || variable == varPeakValue)
                     {
                         var value = variable.Value.ToDouble(null);
-                        edit.Text = string.Format("{0:F1}kWh", value);
+                        edit.Text = "{value:F1}kWh";
 
                         if (variable == varPeakValue)
                         {
